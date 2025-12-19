@@ -9,11 +9,11 @@ Evidência
 Brazilian E-Commerce Public Dataset by Olist
 100,000 Orders with product, customer and reviews info
 
-About Dataset
-Brazilian E-Commerce Public Dataset by Olist
-Welcome! This is a Brazilian ecommerce public dataset of orders made at Olist Store. The dataset has information of 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allows viewing an order from multiple dimensions: from order status, price, payment and freight performance to customer location, product attributes and finally reviews written by customers. We also released a geolocation dataset that relates Brazilian zip codes to lat/lng coordinates.
+Conjunto de Dados Públicos de E-commerce Brasileiro da Olist: 100.000 Pedidos com informações de produtos, clientes e avaliações
 
-This is real commercial data, it has been anonymised, and references to the companies and partners in the review text have been replaced with the names of Game of Thrones great houses.
+Sobre o Conjunto de Dados: Conjunto de Dados Públicos de E-commerce Brasileiro da Olist Bem-vindo! Este é um conjunto de dados públicos de e-commerce brasileiro com informações de pedidos realizados na Loja Olist. O conjunto de dados contém informações de 100 mil pedidos feitos entre 2016 e 2018 em diversos marketplaces no Brasil. Suas funcionalidades permitem visualizar um pedido sob múltiplas perspectivas: desde o status do pedido, preço, pagamento e desempenho do frete até a localização do cliente, atributos do produto e, finalmente, avaliações escritas pelos clientes. Também disponibilizamos um conjunto de dados de geolocalização que relaciona CEPs brasileiros a coordenadas de latitude e longitude.
+
+Estes são dados comerciais reais, foram anonimizados e as referências às empresas e parceiros no texto das avaliações foram substituídas pelos nomes das grandes casas de Game of Thrones.
 
 
 
