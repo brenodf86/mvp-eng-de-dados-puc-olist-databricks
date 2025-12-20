@@ -1,3 +1,75 @@
+# MVP — Pipeline de Dados em Nuvem com Databricks (Olist)
+
+# Objetivo
+
+(cole o objetivo)
+
+# Perguntas de negócio
+
+(lista 1–6)
+
+# Dataset e Licença
+
+# Fonte: Kaggle — Brazilian E-Commerce Public Dataset by Olist
+
+# Licença: CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Arquitetura
+
+DBFS (raw) → Bronze (Delta) → Silver (Delta) → Gold (Esquema Estrela)
+
+# Prints: docs/evidencias/
+
+# Modelagem (Esquema Estrela)
+
+# Diagrama: docs/modelagem_star_schema.png
+
+# Tabelas Gold: dims + fato
+
+# Catálogo de Dados e Qualidade
+
+# Catálogo: docs/catalogo_dados.md
+
+# Evidências: prints de profiling e validações
+
+# ETL / Carga
+
+# Notebooks:
+
+notebooks/01_bronze_ingestao.*
+
+notebooks/02_silver_transformacoes.*
+
+notebooks/03_gold_modelagem_estrela.*
+
+notebooks/04_data_quality.*
+
+notebooks/05_analises_sql_e_resultados.*
+
+# Resultados (resumo)
+
+P1: … (1 parágrafo com achado)
+
+P2: …
+
+P3: …
+
+# Evidências
+
+# Upload DBFS: docs/evidencias/print_dbfs_raw.png
+
+# Tabelas Bronze/Silver/Gold: docs/evidencias/print_tables.png
+
+# Qualidade: docs/evidencias/print_quality.png
+
+# Respostas: docs/evidencias/print_p1.png, …
+
+# Autoavaliação
+
+docs/autoavaliacao.md
+
+
+
 # mvp-eng-de-dados-puc-olist-databricks
 
 Fonte: Kaggle https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download
