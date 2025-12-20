@@ -79,7 +79,7 @@ P3: …
 
 # Evidências
 
-# Upload DBFS: 
+# Upload CSV: 
 docs/evidencias/print_dbfs_raw.png
 
 # Tabelas Bronze/Silver/Gold: 
