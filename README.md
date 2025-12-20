@@ -2,13 +2,27 @@
 
 # Objetivo
 
-(cole o objetivo)
+Problema
+
+No e-commerce, atrasos de entrega e experiência do cliente afetam diretamente satisfação (reviews), custos logísticos e performance de vendedores/categorias. Este MVP constrói um pipeline de dados na nuvem (Databricks Community Edition) para organizar os dados do Olist em um modelo analítico (Esquema Estrela) e responder perguntas de negócio relacionadas a logística, atrasos e satisfação do cliente.
 
 # Perguntas de negócio
 
-(lista 1–6)
+1- Qual é a taxa de pedidos entregues com atraso por mês e por UF?
 
-# Dataset e Licença
+2- Quais categorias de produto têm maior atraso médio (em dias) e maior taxa de atraso?
+
+3- Existe relação entre atraso e nota de review (review_score)?
+
+4- Qual o tempo médio entre compra e entrega por UF e por seller?
+
+5- Quais formas de pagamento possuem maior ticket médio e como se relacionam com atraso?
+
+6- Quais sellers concentram mais volume de vendas e qual sua performance (atraso e review)?
+
+# Dataset: Brazilian E-Commerce Public Dataset by Olist (Kaggle)
+
+Método: download manual no Kaggle + upload dos CSVs no Databricks.
 
 # Fonte: Kaggle — Brazilian E-Commerce Public Dataset by Olist
 
