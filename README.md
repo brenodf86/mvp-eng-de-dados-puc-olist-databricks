@@ -40,15 +40,19 @@ DBFS (raw) → Bronze (Delta) → Silver (Delta) → Gold (Esquema Estrela)
 ## Modelagem (Esquema Estrela)
 ![Star Schema](docs1/modelagem_star_schema.drawio.png)
 
-# Diagrama: docs/modelagem_star_schema.png
+# Diagrama: 
+docs1/modelagem_star_schema_drawio.png
 
-# Tabelas Gold: dims + fato
+# Tabelas Gold: 
+dims + fato
 
 # Catálogo de Dados e Qualidade
 
-# Catálogo: docs/catalogo_dados.md
+# Catálogo: 
+docs/catalogo_dados.md
 
-# Evidências: prints de profiling e validações
+# Evidências: 
+prints de profiling e validações
 
 # ETL / Carga
 
@@ -74,13 +78,17 @@ P3: …
 
 # Evidências
 
-# Upload DBFS: docs/evidencias/print_dbfs_raw.png
+# Upload DBFS: 
+docs/evidencias/print_dbfs_raw.png
 
-# Tabelas Bronze/Silver/Gold: docs/evidencias/print_tables.png
+# Tabelas Bronze/Silver/Gold: 
+docs/evidencias/print_tables.png
 
-# Qualidade: docs/evidencias/print_quality.png
+# Qualidade: 
+docs/evidencias/print_quality.png
 
-# Respostas: docs/evidencias/print_p1.png, …
+# Respostas: 
+docs/evidencias/print_p1.png, …
 
 # Autoavaliação
 
