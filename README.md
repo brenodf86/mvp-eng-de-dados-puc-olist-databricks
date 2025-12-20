@@ -37,7 +37,8 @@ DBFS (raw) → Bronze (Delta) → Silver (Delta) → Gold (Esquema Estrela)
 
 # Prints: docs/evidencias/
 
-# Modelagem (Esquema Estrela)
+## Modelagem (Esquema Estrela)
+![Star Schema](docs/modelagem_star_schema.png)
 
 # Diagrama: docs/modelagem_star_schema.png
 
