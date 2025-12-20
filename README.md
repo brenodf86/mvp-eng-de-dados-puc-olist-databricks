@@ -91,19 +91,12 @@ docs/evidencias/print_quality.png
 # Respostas: 
 docs/evidencias/print_p1.png, …
 
+As perguntas (1), (2) e (3) foram respondidas diretamente via SQL sobre o modelo Gold, permitindo analisar taxa de atraso por período e UF, categorias com maior atraso e a relação entre atraso e review_score. As perguntas (4) e (6) foram parcialmente respondidas, pois demandam agregações adicionais por seller e validações complementares de integridade/duplicidade em joins por pedido e itens. A pergunta (5) foi abordada a partir da tabela de pagamentos, porém uma modelagem mais completa para pagamentos como fato separado (com dim de payment_type) é uma evolução desejável.
+
 # Autoavaliação
 
 docs/autoavaliacao.md
 
-
-
-# mvp-eng-de-dados-puc-olist-databricks
-
-Fonte: Kaggle https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download
-
-Licença: CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
-
-Evidência
 
 Brazilian E-Commerce Public Dataset by Olist
 100,000 Orders with product, customer and reviews info
