@@ -20,13 +20,16 @@ No e-commerce, atrasos de entrega e experiência do cliente afetam diretamente s
 
 6- Quais sellers concentram mais volume de vendas e qual sua performance (atraso e review)?
 
-# Dataset: Brazilian E-Commerce Public Dataset by Olist (Kaggle)
+# Dataset: 
+Brazilian E-Commerce Public Dataset by Olist (Kaggle)
 
 Método: download manual no Kaggle + upload dos CSVs no Databricks.
 
-# Fonte: Kaggle — Brazilian E-Commerce Public Dataset by Olist
+# Fonte: 
+Kaggle — Brazilian E-Commerce Public Dataset by Olist
 
-# Licença: CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+# Licença: 
+CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Arquitetura
 
