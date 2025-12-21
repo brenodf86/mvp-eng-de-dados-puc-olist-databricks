@@ -30,7 +30,7 @@ Este MVP organiza os dados do Olist em um DW/Modelo Estrela para analisar atraso
   https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 **Evidências:**
-- Kaggle: `evidencias/01_kaggle_dataset.png`
+- Kaggle: [evidencias/01_kaggle_dataset.png](evidencias/01_kaggle_dataset.png)
 - Upload/Ingestion: `evidencias/02_ingestion_upload.png`
 
 ---
