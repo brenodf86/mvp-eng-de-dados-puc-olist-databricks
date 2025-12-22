@@ -107,7 +107,7 @@ ORDER BY d.ano, d.mes, taxa_atraso DESC;
 
 **Evidência:**
 
-**Print: [evidencias/08_p1_result.png](evidencias/08_p1_result.png)
+ [evidencias/08_p1_result.png](evidencias/08_p1_result.png)
 
 ### P2 — Categorias com maior atraso médio e taxa de atraso
 
@@ -131,7 +131,7 @@ ORDER BY atraso_medio DESC;
 
 **Evidência:**
 
-**Print: [evidencias/09_p2_result.png](evidencias/09_p2_result.png)
+ [evidencias/09_p2_result.png](evidencias/09_p2_result.png)
 
 ### P3 — Relação entre atraso e review_score
 
@@ -159,7 +159,7 @@ ORDER BY itens DESC;
 
 **Evidência:**
 
-Print: [evidencias/10_p3_result.png](evidencias/10_p3_result.png)
+ [evidencias/10_p3_result.png](evidencias/10_p3_result.png)
 
 ---
 
@@ -171,5 +171,5 @@ As perguntas (1), (2) e (3) foram respondidas via SQL sobre o modelo Gold, permi
 
 ## 9) Autoavaliação
 
-Autoavaliação: docs1/autoavaliacao.md
+Autoavaliação: [docs1/autoavaliacao.md](docs1/autoavaliacao.md)
 
