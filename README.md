@@ -169,6 +169,8 @@ ORDER BY itens DESC;
 ## 8) Discussão de atingimento do objetivo
 
 As perguntas (1), (2) e (3) foram respondidas via SQL sobre o modelo Gold, permitindo analisar taxa de atraso por período/UF, categorias com maior atraso e relação entre atraso e review_score.
+As perguntas (4) e (6) foram parcialmente respondidas, pois demandam agregações adicionais por seller e validações complementares de integridade/duplicidade em joins por pedido e itens. 
+A pergunta (5) foi abordada a partir da tabela de pagamentos, porém uma modelagem mais completa para pagamentos como fato separado (com dim de payment_type) é uma evolução desejável.
 
 ---
 
