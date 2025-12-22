@@ -103,6 +103,7 @@ JOIN gold_dim_cliente c ON f.customer_id = c.customer_id
 WHERE f.entrega_dias IS NOT NULL
 GROUP BY d.ano, d.mes, c.customer_state
 ORDER BY d.ano, d.mes, taxa_atraso DESC;
+```
 
 **Evidência:
 
