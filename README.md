@@ -102,6 +102,71 @@ JOIN gold_dim_data d ON f.date_key_compra = d.date_key
 JOIN gold_dim_cliente c ON f.customer_id = c.customer_id
 WHERE f.entrega_dias IS NOT NULL
 GROUP BY d.ano, d.mes, c.customer_state
-ORDER BY d.ano, d.mes, taxa_atraso DESC
-LIMIT 20;
+ORDER BY d.ano, d.mes, taxa_atraso DESC;
+
+**Evidência:
+
+**Print: evidencias/08_p1_result.png
+
+### P2 — Categorias com maior atraso médio e taxa de atraso
+
+**Achado (resumo):
+A análise por categoria permite identificar grupos com maior incidência de atraso e maior atraso médio, indicando possíveis fragilidades logísticas (características do produto, origem do seller, etc.) e priorização de ações.
+
+**SQL (executado):**
+```sql
+%sql
+SELECT
+  p.product_category_name AS categoria,
+  AVG(f.atraso_dias) AS atraso_medio,
+  AVG(CASE WHEN f.atraso_dias > 0 THEN 1.0 ELSE 0.0 END) AS taxa_atraso,
+  COUNT(*) AS itens
+FROM gold_fato_pedido_item f
+JOIN gold_dim_produto p ON f.product_id = p.product_id
+WHERE f.entrega_dias IS NOT NULL
+GROUP BY p.product_category_name
+ORDER BY atraso_medio DESC;
+
+**Evidência:
+
+**Print: evidencias/09_p2_result.png
+
+P3 — Relação entre atraso e review_score
+
+Achado (resumo):
+Há evidência de associação negativa entre atraso e satisfação: pedidos “no_prazo” apresentam review médio bem superior, enquanto atrasos maiores (ex.: 8+ dias) e casos sem entrega apresentam review médio significativamente menor.
+
+**SQL (executado):**
+```sql
+%sql
+SELECT
+  CASE
+    WHEN f.atraso_dias IS NULL THEN 'sem_entrega'
+    WHEN f.atraso_dias <= 0 THEN 'no_prazo'
+    WHEN f.atraso_dias BETWEEN 1 AND 3 THEN 'atraso_1_3'
+    WHEN f.atraso_dias BETWEEN 4 AND 7 THEN 'atraso_4_7'
+    ELSE 'atraso_8_mais'
+  END AS faixa_atraso,
+  AVG(r.review_score) AS review_medio,
+  COUNT(*) AS itens
+FROM gold_fato_pedido_item f
+JOIN bronze_olist_reviews r ON f.order_id = r.order_id
+GROUP BY faixa_atraso
+ORDER BY itens DESC;
+
+Evidência:
+
+Print: evidencias/10_p3_result.png
+
+---
+
+## 8) Discussão de atingimento do objetivo
+
+As perguntas (1), (2) e (3) foram respondidas via SQL sobre o modelo Gold, permitindo analisar taxa de atraso por período/UF, categorias com maior atraso e relação entre atraso e review_score.
+
+---
+
+## 9) Autoavaliação
+
+Autoavaliação: docs1/autoavaliacao.md
 
