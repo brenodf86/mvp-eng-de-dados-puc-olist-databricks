@@ -105,13 +105,13 @@ GROUP BY d.ano, d.mes, c.customer_state
 ORDER BY d.ano, d.mes, taxa_atraso DESC;
 ```
 
-**Evidência:
+**Evidência:**
 
 **Print: evidencias/08_p1_result.png
 
 ### P2 — Categorias com maior atraso médio e taxa de atraso
 
-**Achado (resumo):
+**Achado (resumo):**
 A análise por categoria permite identificar grupos com maior incidência de atraso e maior atraso médio, indicando possíveis fragilidades logísticas (características do produto, origem do seller, etc.) e priorização de ações.
 
 **SQL (executado):**
@@ -127,14 +127,15 @@ JOIN gold_dim_produto p ON f.product_id = p.product_id
 WHERE f.entrega_dias IS NOT NULL
 GROUP BY p.product_category_name
 ORDER BY atraso_medio DESC;
+```
 
-**Evidência:
+**Evidência:**
 
 **Print: evidencias/09_p2_result.png
 
 P3 — Relação entre atraso e review_score
 
-Achado (resumo):
+**Achado (resumo):**
 Há evidência de associação negativa entre atraso e satisfação: pedidos “no_prazo” apresentam review médio bem superior, enquanto atrasos maiores (ex.: 8+ dias) e casos sem entrega apresentam review médio significativamente menor.
 
 **SQL (executado):**
@@ -154,8 +155,9 @@ FROM gold_fato_pedido_item f
 JOIN bronze_olist_reviews r ON f.order_id = r.order_id
 GROUP BY faixa_atraso
 ORDER BY itens DESC;
+```
 
-Evidência:
+**Evidência:**
 
 Print: evidencias/10_p3_result.png
 
