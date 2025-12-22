@@ -107,7 +107,7 @@ ORDER BY d.ano, d.mes, taxa_atraso DESC;
 
 **Evidência:**
 
-**Print: evidencias/08_p1_result.png
+**Print: [evidencias/08_p1_result.png.(evidencias/08_p1_result.png)
 
 ### P2 — Categorias com maior atraso médio e taxa de atraso
 
