@@ -133,7 +133,7 @@ ORDER BY atraso_medio DESC;
 
 **Print: evidencias/09_p2_result.png
 
-P3 — Relação entre atraso e review_score
+### P3 — Relação entre atraso e review_score
 
 **Achado (resumo):**
 Há evidência de associação negativa entre atraso e satisfação: pedidos “no_prazo” apresentam review médio bem superior, enquanto atrasos maiores (ex.: 8+ dias) e casos sem entrega apresentam review médio significativamente menor.
